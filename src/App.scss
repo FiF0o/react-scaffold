@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/**
+* Sass version: https://materializecss.com/getting-started.html
+* Please follow Materialize scaffolding
+* https://github.com/Dogfalo/materialize/tree/master/sass
+*
+*/
+
+
+/**
+* Variable override per brands
+*/
+/** global scss across brands */
+// Global scss definitions across brands
+@import 'variables.scss';
+
+
+/**
+* Materialize base imports
+*/
+// Colors;
+@import "node_modules/materialize-css/sass/components/color";
+
+// Variables;
+@import "node_modules/materialize-css/sass/components/variables";
+
+// Reset;
+@import "node_modules/materialize-css/sass/components/normalize";
+
+// Components;
+@import "node_modules/materialize-css/sass/components/global";
+@import "node_modules/materialize-css/sass/components/badges";
+@import "node_modules/materialize-css/sass/components/icons-material-design";
+@import "node_modules/materialize-css/sass/components/grid";
+@import "node_modules/materialize-css/sass/components/navbar";
+// font import here
+@import "node_modules/materialize-css/sass/components/typography";
+@import "node_modules/materialize-css/sass/components/transitions";
+@import "node_modules/materialize-css/sass/components/cards";
+@import "node_modules/materialize-css/sass/components/toast";
+@import "node_modules/materialize-css/sass/components/tabs";
+@import "node_modules/materialize-css/sass/components/tooltip";
+@import "node_modules/materialize-css/sass/components/buttons";
+@import "node_modules/materialize-css/sass/components/dropdown";
+@import "node_modules/materialize-css/sass/components/waves";
+@import "node_modules/materialize-css/sass/components/modal";
+@import "node_modules/materialize-css/sass/components/collapsible";
+@import "node_modules/materialize-css/sass/components/chips";
+@import "node_modules/materialize-css/sass/components/materialbox";
+@import "node_modules/materialize-css/sass/components/forms/forms";
+@import "node_modules/materialize-css/sass/components/table_of_contents";
+@import "node_modules/materialize-css/sass/components/sideNav";
+@import "node_modules/materialize-css/sass/components/preloader";
+@import "node_modules/materialize-css/sass/components/slider";
+@import "node_modules/materialize-css/sass/components/carousel";
+@import "node_modules/materialize-css/sass/components/tapTarget";
+@import "node_modules/materialize-css/sass/components/pulse";
+@import "node_modules/materialize-css/sass/components/date_picker/default";
+@import "node_modules/materialize-css/sass/components/date_picker/default.date";
+@import "node_modules/materialize-css/sass/components/date_picker/default.time";
+
+
+/***************************
+******** PER BRAND *********
+* brand1 | brand2 | brand3 *
+***************************/
+@import '~brand';
+
+
+/**
+* Materialize - To be overriden by ${brand} variables - (x3)
+* src > themes > ${brand} > index.scss
+* //TODO section to be moved within its theme with appropriate overrides
+*/
+
+
+// TODO Global scss to be removed
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  color: blue;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
